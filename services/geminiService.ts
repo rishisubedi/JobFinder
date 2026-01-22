@@ -36,17 +36,17 @@ Instructions:
 IMPORTANT: Return ONLY the raw JSON object. Do not include markdown formatting (like \`\`\`json), explanations, or extra text.
 `;
 
-        const response = await hf.textGeneration({
+        const response = await hf.chatCompletion({
             model: 'HuggingFaceH4/zephyr-7b-beta',
-            inputs: prompt,
-            parameters: {
-                max_new_tokens: 500,
-                return_full_text: false,
-                temperature: 0.1, // Low temperature for deterministic output
-            }
+            messages: [
+                { role: "system", content: "You are a helpful assistant that extracts job application details into JSON." },
+                { role: "user", content: prompt }
+            ],
+            max_tokens: 500,
+            temperature: 0.1
         });
 
-        const generatedText = response.generated_text.trim();
+        const generatedText = response.choices[0].message.content?.trim() || "";
 
         // Clean up potential markdown code blocks if the model ignores instruction
         const jsonString = generatedText.replace(/```json/g, '').replace(/```/g, '').trim();
