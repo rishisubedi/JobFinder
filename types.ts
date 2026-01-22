@@ -9,6 +9,7 @@ export enum JobStatus {
 
 export interface JobApplication {
   id: string;
+  user_id?: string;
   companyName: string;
   jobTitle: string;
   applicationDate: string;
