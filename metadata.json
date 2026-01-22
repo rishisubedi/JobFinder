@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Job Tracker Agent",
+  "description": "A smart job application tracker powered by Gemini. Use natural language to log and update your job applications, and let the agent organize the details for you.",
+  "requestFramePermissions": []
+}
