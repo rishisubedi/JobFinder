@@ -66,7 +66,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gray-900 text-gray-100 font-sans flex flex-col">
       <header className="py-6 px-4 sm:px-8 bg-gray-900/80 backdrop-blur-sm sticky top-0 z-10 border-b border-gray-700">
         <div className="max-w-5xl mx-auto">
-            <h1 className="text-3xl font-bold text-white">Gemini Job Tracker</h1>
+            <h1 className="text-3xl font-bold text-white">Student Job Finder</h1>
             <p className="text-gray-400 mt-1">Use natural language to track your job applications.</p>
         </div>
       </header>

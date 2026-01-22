@@ -1,5 +1,5 @@
 {
-  "name": "Gemini Job Tracker Agent",
-  "description": "A smart job application tracker powered by Gemini. Use natural language to log and update your job applications, and let the agent organize the details for you.",
+  "name": "Student Job Finder",
+  "description": "Student Job Finder helps you discover and track job applications seamlessly. Powered by Gemini, it allows you to find jobs, log applications using natural language, and manage your pipeline from start to finish.",
   "requestFramePermissions": []
 }
